@@ -84,9 +84,6 @@ This web-based application allows users to upload health insurance policy docume
 git clone https://github.com/JUSTWANTTODO/HyPyHack.git
 cd HyPyHack
 
-# Install dependencies
-pip install -r requirements.txt
-
 # Run the Streamlit app
-streamlit run app.py
+streamlit run healthinsurancebot.py
 ```
