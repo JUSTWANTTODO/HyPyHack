@@ -1,72 +1,92 @@
-🏥 Health Insurance Explainer Agent
-🚀 An AI-powered assistant that helps users understand health insurance documents effortlessly!
+# Health Insurance Explainer Agent
 
-This tool allows users to upload health insurance policies in PDF, DOCX, or TXT format, extract key details, ask questions about them, and even receive spoken responses—all in a simple, intuitive interface.
+An AI-powered assistant that helps users understand health insurance documents effortlessly.
 
-📌 Features
-🏷️ Intelligent Document Analysis
-Extracts and summarizes key details from health insurance policy documents.
-Supports multi-page PDFs, DOCX, and TXT files.
-Identifies important clauses, benefits, exclusions, and claim processes.
-🌍 Multi-Lingual Support
-Provides policy explanations in English and Tenglish (Telugu written in English letters).
-Enhances accessibility for regional users.
-🔍 OCR Integration
-Supports scanned documents through Optical Character Recognition (OCR).
-Extracts text from images or non-selectable PDFs.
-📄 Policy Comparison
-Compare two health insurance policies and highlight key differences.
-Useful for users deciding between multiple insurance plans.
-🎙️ Voice Interaction
-Speech-to-Text: Users can ask questions via voice input.
-AI Voice Response: AI-generated text-to-speech explanations for better accessibility.
-📝 Summarization in Tenglish
-Generates simple, easy-to-understand summaries of policies in Tenglish.
-Helps users grasp complex insurance terms quickly.
-🏗️ Tech Stack
-Technology	Purpose
-🤖 Google Gemini AI	Intelligent document analysis & response generation
-🖥️ Streamlit	Interactive and user-friendly interface
-📄 PyPDF2, python-docx	Document parsing & text extraction
-🔍 OCR (Tesseract or Google OCR)	Extracts text from scanned images/PDFs
-🎤 Speech Recognition	Converts voice queries into text
-🔊 pyttsx3	AI-generated text-to-speech responses
-🚀 How It Works
-1️⃣ Upload your health insurance document (PDF, DOCX, TXT, or Scanned Image).
-2️⃣ Ask any question about the policy through text or voice input.
-3️⃣ The AI analyzes the document and provides concise, easy-to-understand answers.
-4️⃣ Optionally, get a spoken response for better accessibility.
-5️⃣ Compare different policies to identify key differences and important clauses.
+This web-based application allows users to upload health insurance policy documents (PDF, DOCX, or TXT), extract key details, ask questions about them, and receive both textual and spoken explanations—all through a simple, user-friendly interface.
 
-⚡ Challenges Faced
-✅ Multi-Lingual Support: Implementing Tenglish required fine-tuning AI responses.
-✅ OCR Accuracy: Extracting text from scanned PDFs/images while handling distorted text.
-✅ Context Awareness: Ensuring AI understands insurance-specific terms and conditions.
-✅ Speech Recognition: Handling different accents and background noise for voice input.
+---
 
-💡 Future Enhancements
-🚀 More Language Support (Kannada, Hindi, Tamil, etc.)
-🚀 Chat History Storage for revisiting past interactions
-🚀 Advanced Comparison Metrics for insurance policies
-🚀 Mobile App Version for better accessibility
+## Features
 
-🛠️ Installation & Setup
-Clone the Repository
+### 1. Intelligent Document Analysis
+- Extracts and summarizes key details from health insurance policies.
+- Supports multi-page PDFs, DOCX, and TXT formats.
+- Identifies clauses, benefits, exclusions, and claim processes.
 
-bash
-Copy
-Edit
-git clone https://github.com/your-repo-name.git
-cd your-repo-name
-Install Dependencies
+### 2. Multi-Lingual Support
+- Explains policies in English and **Tenglish** (Telugu in English script).
+- Improves accessibility for regional users.
 
-bash
-Copy
-Edit
+### 3. OCR Integration
+- Supports scanned documents via Optical Character Recognition.
+- Extracts text from images or non-selectable PDFs.
+
+### 4. Policy Comparison
+- Compare two health policies and highlight key differences.
+- Useful for decision-making between plans.
+
+### 5. Voice Interaction
+- Speech-to-text for voice-based questions.
+- AI-generated spoken responses (text-to-speech).
+
+### 6. Simplified Tenglish Summarization
+- Generates easy-to-understand policy summaries in Tenglish.
+- Breaks down complex insurance jargon.
+
+---
+
+## Tech Stack
+
+| Technology       | Purpose                                 |
+|------------------|------------------------------------------|
+| Google Gemini AI | Document understanding & Q&A generation |
+| Streamlit        | Frontend interface                      |
+| PyPDF2           | PDF parsing                             |
+| python-docx      | DOCX parsing                            |
+| Tesseract OCR    | Text extraction from images             |
+| SpeechRecognition| Converts speech to text                 |
+| pyttsx3          | Text-to-speech for AI responses         |
+
+---
+
+## How It Works
+
+1. Upload your health insurance document (PDF, DOCX, TXT, or scanned image).
+2. Ask a question via text or voice input.
+3. The AI processes the document and provides an easy-to-understand answer.
+4. Optionally, receive a spoken response.
+5. Compare two policy documents to identify differences.
+
+---
+
+## Challenges Faced
+
+- **Multi-Lingual Support**: Tailoring responses for Tenglish.
+- **OCR Accuracy**: Handling scanned or distorted text.
+- **Contextual Understanding**: Interpreting insurance-specific terms.
+- **Voice Input Handling**: Managing accent variation and background noise.
+
+---
+
+## Future Enhancements
+
+- Support for additional languages (Kannada, Hindi, Tamil, etc.)
+- Chat history and downloadable Q&A logs.
+- Advanced comparison scoring between policies.
+- Dedicated mobile application for wider reach.
+
+---
+
+## Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/JUSTWANTTODO/HyPyHack.git
+cd HyPyHack
+
+# Install dependencies
 pip install -r requirements.txt
-Run the Application
 
-bash
-Copy
-Edit
+# Run the Streamlit app
 streamlit run app.py
+```
